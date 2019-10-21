@@ -50,6 +50,4 @@ const ArrayForm = (str) => {
     return parser;
 }
 
-const str = "[123, 22, 33]";
-const result = ArrayForm(str);
-console.log(JSON.stringify(result, null, 2)); 
+exports = ArrayForm

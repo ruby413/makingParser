@@ -1,7 +1,7 @@
 const errorMsg = require('./errormsg');
 const Node = require('./node');
 
-const str = "['1a3', [null, false, ['11', [112233], 112], 55, '99'], 33, true]";
+// const str = "['1a3', [null, false, ['11', [112233], 112], 55, '99'], 33, true]";
 
 // Error Case
 // const str = "['1a'3']"
@@ -135,6 +135,6 @@ const ArrayParser = class {
 
 const arrayParser = new ArrayParser();
 
-const parser = arrayParser.parser(str);
-console.log(JSON.stringify(parser, null, 2));
-
+const parser = (str)  => arrayParser.parser(str);
+// console.log(JSON.stringify(parser, null, 2));
+exports = parser
